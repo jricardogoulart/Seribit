@@ -17,10 +17,10 @@ const Menu = () => {
             
             <div className="mid">
                 <ul>
-                    <li><Link to="/">Clientes</Link></li>
-                    <li><Link to="/">Produtos</Link></li>
-                    <li><Link to="/">Usuários</Link></li>
-                    <li><Link to="/">Vales</Link></li>            
+                    <li><Link to="/clientes">Clientes</Link></li>
+                    <li><Link to="/produtos">Produtos</Link></li>
+                    <li><Link to="/usuarios">Usuários</Link></li>
+                    <li><Link to="/vales">Vales</Link></li>            
                 </ul>
             </div>
 
