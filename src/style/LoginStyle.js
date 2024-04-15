@@ -29,10 +29,11 @@ const LoginStyle = createGlobalStyle`
     
     label {
         display: flex;
-        margin-bottom: 8px;
-        color: #fff ;
-        font-size: 24px;
-        font-weight: 200;
+        margin-bottom: 4px;
+        color: #ccc ;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.8px;
     }
 
     .input {
@@ -46,10 +47,10 @@ const LoginStyle = createGlobalStyle`
     }
 
     input::placeholder {
-        opacity: 0.7;
+        opacity: 0.25;
         color: #fff;
         font-size: 16px;
-        font-weight: light;
+        font-weight: 300;
     }
 
     input[type="text"],
@@ -58,15 +59,19 @@ const LoginStyle = createGlobalStyle`
         padding-right: 30px;
         text-align: start;
         width: 240px;
-        height: 24px;
+        height: 16px;
         border: none;
-        border-radius: 10px;
+        border-radius: 4px;
         background-color: #33244F;
+        transition: 480ms;
     }
     
     input[type="text"]:focus,
     input[type="password"]:focus {
         outline: 1.5px solid #803cff94;
+        box-shadow: 0px 0px 8px #873CFF;
+        transform: scale(1.1);
+        
     }
 
     .right {
@@ -85,20 +90,26 @@ const LoginStyle = createGlobalStyle`
     }
 
     .buttonLogin {
-        font-weight: bold;
+        font-weight: 500;
         font-size: 24px;
-        padding: 5px;
-        border-radius: 8px;
+        padding: 2px 8px;
+        border-radius: 4px;
         opacity: 0.6;
-        transition: 600ms;
+        transition: 360ms;
         cursor: pointer;
         border: none;
         margin-top: 16px;
-        color: #000;
+        color: #fff;
+        background-color: transparent;
+        border: 1px solid #ccc;
     }
 
     .buttonLogin:hover {
         opacity: 1;
+        background-color: #873CFF;
+        border: 1px solid #873CFF;
+        box-shadow: 0px 0px 8px #873CFF;
+        transform: scale(1.1);
     }
 
     .seribit {
@@ -121,7 +132,7 @@ const LoginStyle = createGlobalStyle`
         font-weight: 200;
         text-transform: uppercase;
         letter-spacing: 4px;
-        margin-top: 8px
+        margin-top: 16px
     }
 `
 
